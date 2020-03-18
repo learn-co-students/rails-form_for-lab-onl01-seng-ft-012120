@@ -1,0 +1,4 @@
+<h1>School Classes</h1>
+<%=@school_classes.each do |class|%>
+    <div><%=link_to class.class_info, "/school_classes/#{class.id}"%></div>
+<%end%>

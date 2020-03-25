@@ -1,0 +1,9 @@
+<%= form_for @student do |f| %>
+  <%= label_tag('student[:first_name]', "First Name") %>
+  <%= f.text_field :first_name %><br>
+
+  <%= label_tag('student[:last_name]', "Last Name") %>
+  <%= f.text_field :last_name %><br>
+ 
+  <%= f.submit %>
+<% end %>
